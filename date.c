@@ -167,6 +167,8 @@ int setup_window(HWND window_handle, WNDCLASSW wc) {
 
 	DestroyWindow(window_handle);
 	UnregisterClassW(wc.lpszClassName, wc.hInstance);
+
+	return 0;
 }
 
 int main(void) {
